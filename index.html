@@ -11,7 +11,7 @@
 <body>
     <header class="menu">
         <div class="logo">
-            <h1>Moviex <span>.</span></h1>
+            <h1>Moviex<span>.</span></h1>
         </div>
         <nav class="nav-bar">
             <ul>
@@ -27,14 +27,36 @@
     </header>
     <main>
         <div class="container">
+            <div class="left-side">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for genre.." title="Type in a genre">
+
+                    <ul id="myUL">
+                    <li><a href="#">Science fiction</a></li>
+                    <li><a href="#">Documentary</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Romantic</a></li>
+                    <li><a href="#">Animation</a></li>
+                    <li><a href="#">Cartoon</a></li>
+                    </ul>
+            </div>
             <div class="slider">
-                <img src="images/dune.png" alt="">
-                <img src="images/dune.png" alt="">
-                <img src="images/dune.png" alt="">
-                <img src="images/dune.png" alt="">
-                <img src="images/dune.png" alt="">
-                <img src="images/dune.png" alt="">
-                <img src="images/dune.png" alt="">
+                <div class="film-info">
+                    <img src="images/lord_of_the_rings.jpg" alt="">
+                    <h3>Lord of the rings</h3>
+                    <p>genre</p>
+                    <p>length</p>
+                    <p>Beskrivning</p>
+                </div>
+                <div class="film-info">
+                    <img src="images/lord_of_the_rings.jpg" alt="">
+                </div>
+                <div class="film-info">
+                    <img src="images/lord_of_the_rings.jpg" alt="">
+                </div>
+                <div class="film-info">
+                    <img src="images/lord_of_the_rings.jpg" alt="">
+                </div>
             </div>
         </div>
     </main>

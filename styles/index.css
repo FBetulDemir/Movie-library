@@ -1,7 +1,7 @@
 body{
     background-color: rgb(52, 50, 50);
 }
-
+/* navigation style */
 .menu{
     display: flex;
     justify-content: space-around;
@@ -57,4 +57,40 @@ body{
   
 .search-container button:hover {
     background-color: #be8f8f;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+}
+
+/* left side style */
+.container li a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+.container ul{
+    list-style: none;
+}
+
+
+.slider{
+    display: flex;
+    width: 100%;
+}
+
+.slider img{
+    padding: 0.25rem;
+    max-width: 80%;
+    padding: .25rem;
+    
+}
+
+.film-info{
+    color: #ffff;
+    border: 2px solid #ffff;
+    margin: 0 1rem;
+    
 }
