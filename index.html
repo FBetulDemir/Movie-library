@@ -31,7 +31,7 @@
     <main>
         <div class="container">
             <div class="left-side">
-                <input type="text" id="myInput" placeholder="Search for genre.." title="Type in a genre">
+                <input type="text" id="search-genre" placeholder="Search for genre.." title="Type in a genre">
                 <ul id="myUL">
                     <li><a href="#">Science fiction</a></li>
                     <li><a href="#">Documentary</a></li>
@@ -39,53 +39,102 @@
                     <li><a href="#">Comedy</a></li>
                     <li><a href="#">Romantic</a></li>
                     <li><a href="#">Animation</a></li>
-                    <li><a href="#">Cartoon</a></li>
+                    <li><a href="#">Fantasy</a></li>
                 </ul>
             </div>
-            
-            <div class="wrapper">
-                <div class="genre-title">
-                    <h2>Science Fiction</h2>
+            <div class="right-side">
+                <div class="wrapper">
+                    <div class="genre-title">
+                        <h2>Fantasy</h2>
+                    </div>
+                    <div class="genre-display">
+                        <div class="film-info">
+                            <img src="images/lord_of_the_rings.jpg" alt="Film poster of">
+                            <button onclick="displayText()">Read more</button>
+                            <h3>Lord of the rings</h3>
+                            <div class="description-box">
+                                <p>Genre:Fantasy</p>
+                                <p>Length: 178 min</p>
+                                <p>Description: An epic journey to destroy the One Ring.</p>
+                            </div>
+                        </div>
+                        <div class="film-info">
+                            <img src="images/harry-potter.jpg" alt="Film poster of Harry Potter">
+                            <button>Read more</button>
+                            <h3>Lord of the rings</h3>
+                            <div class="description-box">
+                                <p>Genre:Fantasy</p>
+                                <p>Length: 178 min</p>
+                                <p>Description: An epic journey to destroy the One Ring.</p>
+                            </div>
+                        </div>
+                        <div class="film-info">
+                            <img src="images/charlie.jpg" alt="Film poster of">
+                            <button onclick="handleButton()" id="description-button">Read more</button>
+                            <h3>Charlie and the Chocolate Factory</h3>
+                            <div class="description-box">
+                                <p>Genre:Fantasy</p>
+                                <p>Length: 178 min</p>
+                                <p>Description: An epic journey to destroy the One Ring.</p>
+                            </div>
+                        </div>
+                        <div class="film-info">
+                            <img src="images/dune.jpg" alt="Film poster of">
+                            <button>Read more</button>
+                            <h3>Dune</h3>
+                            <div class="description-box">
+                                <p>Genre:Fantasy</p>
+                                <p>Length: 178 min</p>
+                                <p>Description: An epic journey to destroy the One Ring.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="genre-display">
-                    <div class="film-info">
-                        <img src="images/lord_of_the_rings.jpg" alt="">
-                        <button onclick="displayText()" onclick="showLess()">Read more</button>
-                        <h3>Lord of the rings</h3>
-                        <div class="description-box">
-                            <p>genre</p>
-                            <p>length</p>
-                            <p>Beskrivning</p>
-                        </div>
+    
+                <div class="wrapper">
+                    <div class="genre-title">
+                        <h2>Comedy</h2>
                     </div>
-                    <div class="film-info">
-                        <img src="images/lord_of_the_rings.jpg" alt="">
-                        <button>Read more</button>
-                        <h3>Lord of the rings</h3>
-                        <div class="description-box">
-                            <p>genre</p>
-                            <p>length</p>
-                            <p>Beskrivning</p>
+                    <div class="genre-display">
+                        <div class="film-info">
+                            <img src="images/hangover.jpg" alt="Film poster of">
+                            <button onclick="displayText()">Read more</button>
+                            <h3>Hangover</h3>
+                            <div class="description-box">
+                                <p>Genre:Comedy</p>
+                                <p>Length: 178 min</p>
+                                <p>Description: An epic journey to destroy the One Ring.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="film-info">
-                        <img src="images/lord_of_the_rings.jpg" alt="">
-                        <button onclick="handleButton()" id="description-button">Read more</button>
-                        <h3>Lord of the rings</h3>
-                        <div class="description-box">
-                            <p>genre</p>
-                            <p>length</p>
-                            <p>Beskrivning</p>
+                        <div class="film-info">
+                            <img src="images/millers.jpg" alt="Film poster of We are the Millers">
+                            <button>Read more</button>
+                            <h3>We're the Millers</h3>
+                            <div class="description-box">
+                                <p>Genre:Comedy</p>
+                                <p>Length: 178 min</p>
+                                <p>Description: An epic journey to destroy the One Ring.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="film-info">
-                        <img src="images/lord_of_the_rings.jpg" alt="">
-                        <button>Read more</button>
-                        <h3>Lord of the rings</h3>
-                        <div class="description-box">
-                            <p>genre</p>
-                            <p>length</p>
-                            <p>Beskrivning</p>
+                        <div class="film-info">
+                            <img src="images/bucket_list.jpg" alt="Film poster of">
+                            <button onclick="handleButton()">Read more</button>
+                            <h3>The Bucket List</h3>
+                            <div class="description-box">
+                                <p>Genre:Comedy</p>
+                                <p>Length: 178 min</p>
+                                <p>Description: An epic journey to destroy the One Ring.</p>
+                            </div>
+                        </div>
+                        <div class="film-info">
+                            <img src="images/superbad.jpg" alt="Film poster of">
+                            <button>Read more</button>
+                            <h3>Superbad</h3>
+                            <div class="description-box">
+                                <p>Genre:Comedy</p>
+                                <p>Length: 178 min</p>
+                                <p>Description: An epic journey to destroy the One Ring.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
