@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,9 +31,8 @@
     <main>
         <div class="container">
             <div class="left-side">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for genre.." title="Type in a genre">
-
-                    <ul id="myUL">
+                <input type="text" id="myInput" placeholder="Search for genre.." title="Type in a genre">
+                <ul id="myUL">
                     <li><a href="#">Science fiction</a></li>
                     <li><a href="#">Documentary</a></li>
                     <li><a href="#">Horror</a></li>
@@ -38,31 +40,62 @@
                     <li><a href="#">Romantic</a></li>
                     <li><a href="#">Animation</a></li>
                     <li><a href="#">Cartoon</a></li>
-                    </ul>
+                </ul>
             </div>
-            <div class="slider">
-                <div class="film-info">
-                    <img src="images/lord_of_the_rings.jpg" alt="">
-                    <h3>Lord of the rings</h3>
-                    <p>genre</p>
-                    <p>length</p>
-                    <p>Beskrivning</p>
+            
+            <div class="wrapper">
+                <div class="genre-title">
+                    <h2>Science Fiction</h2>
                 </div>
-                <div class="film-info">
-                    <img src="images/lord_of_the_rings.jpg" alt="">
-                </div>
-                <div class="film-info">
-                    <img src="images/lord_of_the_rings.jpg" alt="">
-                </div>
-                <div class="film-info">
-                    <img src="images/lord_of_the_rings.jpg" alt="">
+                <div class="genre-display">
+                    <div class="film-info">
+                        <img src="images/lord_of_the_rings.jpg" alt="">
+                        <button onclick="displayText()" onclick="showLess()">Read more</button>
+                        <h3>Lord of the rings</h3>
+                        <div class="description-box">
+                            <p>genre</p>
+                            <p>length</p>
+                            <p>Beskrivning</p>
+                        </div>
+                    </div>
+                    <div class="film-info">
+                        <img src="images/lord_of_the_rings.jpg" alt="">
+                        <button>Read more</button>
+                        <h3>Lord of the rings</h3>
+                        <div class="description-box">
+                            <p>genre</p>
+                            <p>length</p>
+                            <p>Beskrivning</p>
+                        </div>
+                    </div>
+                    <div class="film-info">
+                        <img src="images/lord_of_the_rings.jpg" alt="">
+                        <button onclick="handleButton()" id="description-button">Read more</button>
+                        <h3>Lord of the rings</h3>
+                        <div class="description-box">
+                            <p>genre</p>
+                            <p>length</p>
+                            <p>Beskrivning</p>
+                        </div>
+                    </div>
+                    <div class="film-info">
+                        <img src="images/lord_of_the_rings.jpg" alt="">
+                        <button>Read more</button>
+                        <h3>Lord of the rings</h3>
+                        <div class="description-box">
+                            <p>genre</p>
+                            <p>length</p>
+                            <p>Beskrivning</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-
+        <p>Copyright &copy; 2024 Betül Demir</p>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
