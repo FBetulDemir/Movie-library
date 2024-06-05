@@ -63,9 +63,8 @@ body{
 
 .container {
     display: flex;
-    flex: 1;
     padding: 1em;
-    align-content: flex-start;
+    align-content: start;
 }
 
 /* left side style */
@@ -97,6 +96,13 @@ body{
 .left-side ul li a {
     text-decoration: none;
     color: #ffff;
+    font-size: 12px;
+}
+
+.left-side ul li a:hover{
+    background-color: #ada8a8;
+    color: #333;
+    padding: 3% 4%;
 }
 
 /* right side style */
@@ -106,15 +112,25 @@ body{
 }
 .wrapper {
     flex: 4;
-    padding: 1em;
+    padding: 0 1em;
+}
+
+.genre-title{
+    border-bottom: 2px solid #ada8a8;
+    margin-bottom: 2rem;
 }
 
 .genre-title h2 {
     margin-bottom: 2rem;
     color: #ffff;
-    font-size: large;
+    font-size: 25px;
     text-align: center;
     letter-spacing: 5px;
+
+}
+
+#comedy {
+    margin-top: 8rem;
 }
 
 .genre-display {
